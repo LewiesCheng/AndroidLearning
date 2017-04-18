@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GuessNumber</string>
+    <string name="input">Please input a number(1-100)</string>
+    <string name="big"> is bigger!</string>
+    <string name="small"> is smaller!</string>
+    <string name="right">You are right!</string>
+    <string name="create">Please create a number</string>
+    <string name="success">Create succeed!</string>
+    <string name="createButton">CREATE</string>
+    <string name="showAnswerButton">SHOW ANSWER</string>
+    <string name="guessButton">GUESS</string>
+
+    <string name="sure">Are you sure you want to see the answer?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="answer">ANSWER: </string>
+</resources>

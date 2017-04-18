@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">猜数字</string>
+    <string name="answer">答案：</string>
+    <string name="big">大了一点点。。。</string>
+    <string name="create">请先生成一个数字</string>
+    <string name="small">小了一点点。。。</string>
+    <string name="no">否</string>
+    <string name="yes">是</string>
+    <string name="sure">你确定你想要看答案吗？</string>
+    <string name="success">数字已生成！</string>
+    <string name="showAnswerButton">显示答案</string>
+    <string name="right">你猜对了！！！</string>
+    <string name="input">请输入任意1-100的数字</string>
+    <string name="guessButton">猜猜猜</string>
+    <string name="createButton">数字生成</string>
+</resources>
