@@ -75,12 +75,13 @@ public class CrimeListFragment extends Fragment {
             mTitleTextView = (TextView) itemView.findViewById(R.id.list_item_crime_title_text_view);
             mDateTextView = (TextView) itemView.findViewById(R.id.list_item_crime_date_text_view);
             mSolvedCheckBox = (CheckBox) itemView.findViewById(R.id.list_item_crime_solved_check_box);
-            mSolvedCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                    mCrime.setSolved(b);
-                }
-            });
+//            mSolvedCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//                @Override
+//                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+//                    mCrime.setSolved(b);
+//                }
+//            });
+            mSolvedCheckBox.setEnabled(false);
         }
         public void bindCrime(Crime crime){
             mCrime = crime;
@@ -114,6 +115,10 @@ public class CrimeListFragment extends Fragment {
         public int getItemCount() {
             return mCrimes.size();
         }
+
+        public void setCrimes(List<Crime> crimes){
+            mCrimes = crimes;
+        }
     }
 
     @Override
@@ -136,6 +141,7 @@ public class CrimeListFragment extends Fragment {
             mCrimeRecyelerView.setAdapter(mAdapter);
         }else {
             //10.5?
+            mAdapter.setCrimes(crimes);
             mAdapter.notifyDataSetChanged();
         }
     }

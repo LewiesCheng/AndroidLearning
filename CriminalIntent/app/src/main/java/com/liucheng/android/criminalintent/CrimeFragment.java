@@ -144,7 +144,13 @@ public class CrimeFragment extends Fragment {
         mDataButton.setText(dateString.substring(0,10) + dateString.substring(19));
     }
 
-//    @Override
+    @Override
+    public void onPause() {
+        super.onPause();
+        CrimeLab.get(getActivity()).updateCrime(mCrime);
+    }
+
+    //    @Override
 //    public void onPause() {
 //        super.onPause();
 //        if (isChanged){
